@@ -22,7 +22,7 @@ async function tokenCreateFcn(walletData, accountId) {
 		.setAutoRenewPeriod(7776000)
 		.setInitialSupply(1)
 		.setMaxSupply(10000)
-		.setDecimals(1)
+		.setDecimals()
 		.setSupplyKey(supplyKey)
 		.freezeWithSigner(signer);
 	const tokenCreateSubmit = await tokenCreateTx.executeWithSigner(signer);
