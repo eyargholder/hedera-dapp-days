@@ -18,6 +18,7 @@ async function tokenCreateFcn(walletData, accountId) {
 		.setTokenName("SPOBuX")
 		.setTokenSymbol("SPOB-X")
 		.setTreasuryAccountId(accountId)
+		.setTokenType(TokenType.FungibleCommon)
 		.setAutoRenewAccountId(accountId)
 		.setAutoRenewPeriod(7776000)
 		.setInitialSupply(10000)
