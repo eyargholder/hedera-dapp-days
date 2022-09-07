@@ -1,5 +1,6 @@
 import axios from "axios";
 import { TokenCreateTransaction, PublicKey } from "@hashgraph/sdk";
+import { TokenSupplyType} from "@hashgraph/sdk";
 
 async function tokenCreateFcn(walletData, accountId) {
 	console.log(`\n=======================================`);
